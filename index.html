@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Trip Chat Wellness｜Room Check Mission</title>
+
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+  <script src="https://code.jquery.com/ui/1.13.3/jquery-ui.min.js"></script>
+  <link rel="stylesheet" href="https://code.jquery.com/ui/1.13.3/themes/base/jquery-ui.css" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <main class="app">
+    <section class="header">
+      <div class="title">
+        <h1>Room Check Mission</h1>
+        <p>客人預約前，系統會隨機派發準備清單。請在不同療癒房間裡找出隱藏物件。</p>
+      </div>
+      <div class="controls">
+        <button id="newGameBtn">新的清單</button>
+        <button id="changeSceneBtn" class="secondary">換房間</button>
+        <button id="hintBtn" class="secondary">提示</button>
+      </div>
+    </section>
+
+    <section class="layout">
+      <div class="game-card">
+        <div class="scene-wrap" id="scene">
+          <img id="sceneImage" src="assets/scene-01.png" alt="Trip Chat Wellness spa treatment room" />
+
+          <div class="hotspot hs-oil-hand" data-item="oil" title="Oil"></div>
+          <div class="hotspot hs-oil-shelf" data-item="oil" title="Oil"></div>
+          <div class="hotspot hs-sheet" data-item="sheet" title="Sheet"></div>
+          <div class="hotspot hs-towel-left" data-item="towel" title="Towels"></div>
+          <div class="hotspot hs-towel-right" data-item="towel" title="Towels"></div>
+          <div class="hotspot hs-lighting-left" data-item="lighting" title="Lighting"></div>
+          <div class="hotspot hs-lighting-top" data-item="lighting" title="Lighting"></div>
+          <div class="hotspot hs-ambience" data-item="ambience" title="Ambience"></div>
+          <div class="hotspot hs-cleanliness" data-item="cleanliness" title="Cleanliness"></div>
+          <div class="hotspot hs-client" data-item="you" title="You"></div>
+
+          <div class="hotspot hs-bird" data-item="therapist" title="Therapist"></div>
+          <div class="hotspot hs-book" data-item="book" title="Book"></div>
+        </div>
+      </div>
+
+      <aside class="panel">
+        <div class="mission">
+          <h2>預約前準備清單</h2>
+          <p id="missionText">請找出系統指定的準備項目。不是每個可點擊物件都在清單中。</p>
+        </div>
+
+        <div class="stats">
+          <div class="stat">
+            <strong id="foundCount">0</strong>
+            <span>已找到</span>
+          </div>
+          <div class="stat">
+            <strong id="mistakeCount">0</strong>
+            <span>誤點</span>
+          </div>
+        </div>
+
+        <div id="progressbar"></div>
+        <ul class="checklist" id="checklistUI"></ul>
+
+        <div class="feedback" id="feedback">點擊房間裡的物件開始檢查。</div>
+
+        <div class="scene-strip" id="sceneStrip"></div>
+
+        <div class="instructions">
+          每局隨機抽取 4 個項目，再加入隱藏核心項目「YOU」。你可以換房間，同一套清單會保留。
+        </div>
+      </aside>
+    </section>
+  </main>
+
+  <div id="resultDialog" title="Room Check Complete">
+    <div class="result-title">最後一項是：YOU</div>
+    <p>
+      毛巾、床單、精油、氛圍都可以準備好。<br />
+      但真正的放鬆，從你願意停下來開始。
+    </p>
+    <p><strong>Trip Chat Wellness</strong><br />我們準備好空間，你只需要準備好自己。</p>
+  </div>
+
+  <script src="js/game.js"></script>
+</body>
+</html>
