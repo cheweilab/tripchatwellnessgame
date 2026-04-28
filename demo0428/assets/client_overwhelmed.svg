@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="420" height="420" viewBox="0 0 420 420">
+  <defs>
+    <radialGradient id="shadow" cx="50%" cy="75%" r="45%"><stop stop-color="#000" stop-opacity="0.45"/><stop offset="1" stop-color="#000" stop-opacity="0"/></radialGradient>
+  </defs>
+  <ellipse cx="210" cy="345" rx="150" ry="42" fill="url(#shadow)"/>
+  <path d="M130 330c6-80 25-128 80-128s74 48 80 128z" fill="#b98276" stroke="#2a1518" stroke-width="5"/>
+  <circle cx="210" cy="148" r="78" fill="#b98276" stroke="#2a1518" stroke-width="5"/>
+  <path d="M138 133c16-72 128-90 150-2-30-28-115-28-150 2z" fill="#2f1b20"/>
+  <circle cx="182" cy="150" r="6" fill="#f7e8dc"/><circle cx="238" cy="150" r="6" fill="#f7e8dc"/><circle cx="182" cy="150" r="3" fill="#111"/><circle cx="238" cy="150" r="3" fill="#111"/>
+  <path d="M196 190h28" stroke="#451f24" stroke-width="7" stroke-linecap="round"/>
+  <path d="M170 226c32 18 56 18 82 0" fill="none" stroke="#6b3d37" stroke-width="6" stroke-linecap="round" opacity="0.35"/>
+  <path d="M118 70c45 24 138 25 184 0" stroke="#6f343a" stroke-width="5" opacity=".65"/><path d="M126 92c39 18 128 18 168 0" stroke="#6f343a" stroke-width="4" opacity=".45"/>
+  <text x="210" y="398" text-anchor="middle" fill="#f2d6aa" font-size="28" font-family="sans-serif" font-weight="700">OVERWHELMED</text>
+</svg>

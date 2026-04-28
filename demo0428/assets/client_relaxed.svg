@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="420" height="420" viewBox="0 0 420 420">
+  <defs>
+    <radialGradient id="shadow" cx="50%" cy="75%" r="45%"><stop stop-color="#000" stop-opacity="0.45"/><stop offset="1" stop-color="#000" stop-opacity="0"/></radialGradient>
+  </defs>
+  <ellipse cx="210" cy="345" rx="150" ry="42" fill="url(#shadow)"/>
+  <path d="M130 330c6-80 25-128 80-128s74 48 80 128z" fill="#d6a07b" stroke="#2a1518" stroke-width="5"/>
+  <circle cx="210" cy="148" r="78" fill="#d6a07b" stroke="#2a1518" stroke-width="5"/>
+  <path d="M138 133c16-72 128-90 150-2-30-28-115-28-150 2z" fill="#2f1b20"/>
+  <path d="M170 150q12 10 25 0" fill="none" stroke="#1c1012" stroke-width="6" stroke-linecap="round"/><path d="M225 150q12 10 25 0" fill="none" stroke="#1c1012" stroke-width="6" stroke-linecap="round"/>
+  <path d="M184 184q26 24 52 0" fill="none" stroke="#451f24" stroke-width="6" stroke-linecap="round"/>
+  <path d="M170 226c32 18 56 18 82 0" fill="none" stroke="#6b3d37" stroke-width="6" stroke-linecap="round" opacity="0.35"/>
+  <circle cx="116" cy="102" r="12" fill="#f4c977" opacity="0.55"/><circle cx="304" cy="116" r="10" fill="#f4c977" opacity="0.45"/>
+  <text x="210" y="398" text-anchor="middle" fill="#f2d6aa" font-size="28" font-family="sans-serif" font-weight="700">RELAXED</text>
+</svg>

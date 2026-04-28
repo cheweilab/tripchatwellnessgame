@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="420" height="420" viewBox="0 0 420 420">
+  <defs>
+    <radialGradient id="shadow" cx="50%" cy="75%" r="45%"><stop stop-color="#000" stop-opacity="0.45"/><stop offset="1" stop-color="#000" stop-opacity="0"/></radialGradient>
+  </defs>
+  <ellipse cx="210" cy="345" rx="150" ry="42" fill="url(#shadow)"/>
+  <path d="M130 330c6-80 25-128 80-128s74 48 80 128z" fill="#9b756b" stroke="#2a1518" stroke-width="5"/>
+  <circle cx="210" cy="148" r="78" fill="#9b756b" stroke="#2a1518" stroke-width="5"/>
+  <path d="M138 133c16-72 128-90 150-2-30-28-115-28-150 2z" fill="#2f1b20"/>
+  <circle cx="182" cy="150" r="12" fill="#0b0507"/><circle cx="238" cy="150" r="12" fill="#0b0507"/><circle cx="182" cy="150" r="4" fill="#d64c4c"/><circle cx="238" cy="150" r="4" fill="#d64c4c"/>
+  <path d="M190 190q20 22 40 0" fill="none" stroke="#1b0a0e" stroke-width="7" stroke-linecap="round"/>
+  <path d="M170 226c32 18 56 18 82 0" fill="none" stroke="#6b3d37" stroke-width="6" stroke-linecap="round" opacity="0.35"/>
+  <line x1="176" y1="0" x2="176" y2="86" stroke="#e8d5b8" stroke-width="4" opacity=".85"/><line x1="244" y1="0" x2="244" y2="86" stroke="#e8d5b8" stroke-width="4" opacity=".85"/><path d="M112 282h196" stroke="#d64c4c" stroke-width="7" opacity=".45"/>
+  <text x="210" y="398" text-anchor="middle" fill="#f2d6aa" font-size="28" font-family="sans-serif" font-weight="700">PUPPET</text>
+</svg>
