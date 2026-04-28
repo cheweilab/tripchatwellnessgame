@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>放鬆按摩大挑戰 Demo v2</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <main id="app" class="app">
+    <section id="startScreen" class="screen active start-screen">
+      <div class="logo">放鬆按摩大挑戰</div>
+      <p class="tagline">在時間內完成按摩指令，讓客人放鬆。<br>但錯太多次，木偶線就會落下。</p>
+      <div class="rules-card">
+        <div>正確按鍵：放鬆值上升</div>
+        <div>錯誤按鍵：木偶值上升</div>
+        <div>木偶值會隨時間慢慢增加</div>
+      </div>
+      <button id="startBtn" class="primary-btn">開始夜班</button>
+    </section>
+
+    <section id="setupScreen" class="screen setup-screen">
+      <div class="topline">客人資料</div>
+      <div class="client-card">
+        <img id="setupClientImage" src="assets/client_normal.svg" alt="客人狀態" />
+        <div>
+          <h1 id="clientName">疲憊上班族</h1>
+          <p id="clientRequest">「肩頸很緊，想放鬆一下。」</p>
+          <p id="clientHint" class="hint">提示：先選一種精油。</p>
+        </div>
+      </div>
+
+      <div class="choice-title">選擇本次按摩精油</div>
+      <div class="oil-options">
+        <button class="oil-btn" data-oil="soft">
+          <strong>舒緩精油</strong>
+          <span>較安全，放鬆速度較慢</span>
+        </button>
+        <button class="oil-btn" data-oil="strong">
+          <strong>深層精油</strong>
+          <span>放鬆較快，但錯誤懲罰較高</span>
+        </button>
+      </div>
+    </section>
+
+    <section id="gameScreen" class="screen game-screen">
+      <div id="roomLayer" class="room-layer">
+        <img id="roomImage" class="room-image" src="assets/room.png" alt="按摩治療室" />
+        <div id="darkOverlay" class="dark-overlay"></div>
+        <img id="clientImage" class="client-image" src="assets/client_normal.svg" alt="客人" />
+      </div>
+
+      <header class="hud">
+        <div class="hud-item"><span>時間</span><strong id="timerText">30</strong></div>
+        <div class="meter-block">
+          <span>放鬆值</span>
+          <div class="bar"><div id="relaxBar" class="bar-fill relax"></div></div>
+        </div>
+        <div class="meter-block">
+          <span>木偶值</span>
+          <div class="bar"><div id="puppetBar" class="bar-fill puppet"></div></div>
+        </div>
+      </header>
+
+      <div class="caption-box">
+        <div id="stateLabel" class="state-label">NEUTRAL</div>
+        <p id="captionText">客人看起來有點緊張，正在等你開始。</p>
+      </div>
+
+      <div class="sequence-panel">
+        <div class="sequence-title">按摩方向</div>
+        <div id="sequenceDisplay" class="sequence-display"></div>
+        <div id="feedbackText" class="feedback-text">依照順序按下方向鍵</div>
+      </div>
+
+      <div class="touch-controls" aria-label="手機操作按鈕">
+        <button data-key="ArrowUp">↑</button>
+        <button data-key="ArrowLeft">←</button>
+        <button data-key="ArrowDown">↓</button>
+        <button data-key="ArrowRight">→</button>
+      </div>
+    </section>
+
+    <section id="endScreen" class="screen end-screen">
+      <img id="endImage" src="assets/client_relaxed.svg" alt="結局圖" />
+      <h1 id="endTitle">挑戰成功</h1>
+      <p id="endMessage">客人終於放鬆下來，這次夜班安全結束。</p>
+      <div id="endStats" class="end-stats"></div>
+      <button id="restartBtn" class="primary-btn">再玩一次</button>
+    </section>
+  </main>
+
+  <script src="game.js"></script>
+</body>
+</html>
